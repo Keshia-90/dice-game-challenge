@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+*{
+    font-family: 'Indie Flower', cursive;
+}
+html{
+    margin:0;
+    padding:0;
+    background: url(https://image.shutterstock.com/image-vector/dice-casino-chips-flying-realistic-260nw-1846942795.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+h1{
+    font-size: 100px;
+    text-align: center;
+    text-decoration: underline;
+    animation: color-animation 4s linear infinite;
+}
+h1{
+    --color-1: #373afe;
+    --color-2: #ff35e4;
+    --color-3: #9521fa;
+}
+@keyframes color-animation {
+    0%    {color: var(--color-1)}
+    32%   {color: var(--color-1)}
+    33%   {color: var(--color-2)}
+    65%   {color: var(--color-2)}
+    66%   {color: var(--color-3)}
+    99%   {color: var(--color-3)}
+    100%  {color: var(--color-1)}
+}
+
+#p{
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#diceArea{
+    border-style: groove;
+    height: 800px;
+    width: 800px;
+    display: flex;
+    justify-content: center;
+}
+
+#diceRoll{
+    background-color: rgba(220, 20, 60, 0.614);
+    font-size: 50px;
+}
+#playAgain{
+    background-color: rgba(220, 20, 60, 0.614);
+    font-size: 50px;
+}
+
+.buttons{
+display: flex;
+justify-content: center;
+justify-content: space-around;
+}
+
+#scoreAndDice{
+    font-size: 50px;
+    text-align: center;
+    text-decoration: underline;
+    border-style: double;
+    border-width: 20px;
+    background-color: rgba(200, 29, 215, 0.651);
+}
+
+#diceSide{
+    margin: auto;
+    display: block;
+    opacity: 60%;
+}
+
+.score{
+    font-size: 50px;
+    text-align: center;
+    text-decoration: underline;
+    font-weight: bolder;
+}
+
+#diceRoll{
+    transition: transform 1s ease-in-out;
+    text-align: justify;  
+}
+
+#diceRoll:hover{
+        border-radius: 0%;
+        transform: skew(30deg, 20deg);
+}
+
+#playAgain{
+    transition: transform 1s ease-in-out;
+    text-align: justify;  
+}
+
+#playAgain:hover{
+    border-radius: 0%;
+    transform: skew(20deg, 30deg);
+}
+
+
+
+
